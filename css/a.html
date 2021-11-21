@@ -12,3 +12,42 @@
     </svg>
 </body>
 </html>
+
+<div class="about-icon-div">
+    <svg class="header-icon" width="70" height="70">
+        <use href="./images/icons.svg#icon-antenna"></use>
+    </svg>
+</div>
+
+.team-social-list {   ul
+display: flex;
+justify-content: center;
+}
+
+.team-social-item { li
+width: 44px;
+height: 44px;
+}
+
+.team-social-link {  a
+width: 100%;
+height: 100%;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+fill: var(--footer-logo-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+background-color: var(--accent-color);
+}
+
+.team-social-icon {   svg
+fill: var(--social-icons-color);
+}
