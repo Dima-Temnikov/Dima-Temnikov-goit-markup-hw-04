@@ -58,7 +58,7 @@ p {
 
 section {
   padding-top: 94px;
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
   padding-bottom: 94px;
 }
 
@@ -68,7 +68,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid rgb(16, 92, 179);
+  /*outline: 2px solid rgb(16, 92, 179);*/
 }
 
 /*-----------------------HEADER--------------------*/
@@ -515,19 +515,35 @@ section {
 .footer-tel:focus .footer-adr-ph:focus {
   color: var(--accent-color);
 }
+/*-----------------------------*/
+.footer-social-box {
+  margin-left: 70px;
+}
 
-.footer-social-links {
-  display: flex;
+.footer-secondtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--adress-text-color);
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 
 .footer-social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-social-item {
   width: 44px;
   height: 44px;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
 }
 
 .footer-social-link {
@@ -537,10 +553,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-icon {
-  fill: var(--social-icons-color);
+  fill: var(--button-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /*-----------------------PORTFOLIO--------------------*/
