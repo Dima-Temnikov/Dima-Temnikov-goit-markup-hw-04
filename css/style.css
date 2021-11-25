@@ -458,6 +458,7 @@ section {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -527,7 +528,6 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--adress-text-color);
-  margin-top: 12px;
   margin-bottom: 20px;
 }
 
