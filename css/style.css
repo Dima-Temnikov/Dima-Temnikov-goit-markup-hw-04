@@ -18,6 +18,8 @@
   --footer-frame-color: #ececec;
   --portfolio-border-color: #eeeeee;
   --social-icons-color: #afb1b8;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-social-link-color: rgba(255, 255, 255, 0.1);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -123,6 +125,9 @@ section {
   color: var(--second-title-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus {
@@ -152,6 +157,9 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--phone-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -367,6 +375,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover .team-social-icon,
@@ -381,6 +392,9 @@ section {
 
 .team-social-icon {
   fill: var(--social-icons-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------------REGULAR CUSTOMERS------------*/
@@ -412,10 +426,16 @@ section {
   border: 1px solid var(--social-icons-color);
   box-sizing: border-box;
   border-radius: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
   fill: var(--social-icons-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover .customers-icon,
@@ -456,13 +476,11 @@ section {
   width: 145px;
   height: 31px;
   margin-bottom: 20px;
-  /*outline: solid 1px tomato;*/
 }
 
 .address-list {
   display: block;
   width: 231px;
-  /*outline: solid 1px tomato;*/
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -474,29 +492,26 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--adress-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-mail {
+.footer-contacts {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-tel {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail:hover,
-.footer-tel:hover,
+.footer-contacts:hover,
 .footer-adr-ph:hover,
-.footer-mail:focus,
-.footer-tel:focus .footer-adr-ph:focus {
+.footer-contacts:focus,
+.footer-adr-ph:focus {
   color: var(--accent-color);
 }
 /*-----------------------------*/
@@ -536,7 +551,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-social-link-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -575,6 +593,10 @@ section {
   height: 38px;
   padding: 6px 22px;
   background-color: var(--port-btm-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-button:hover,
@@ -592,6 +614,10 @@ section {
   margin-right: 30px;
   margin-bottom: 30px;
   outline: solid 1px var(--portfolio-border-color);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-list-item:hover,
 .port-list-item:focus {
